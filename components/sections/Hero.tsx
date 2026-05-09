@@ -11,18 +11,30 @@ export function Hero() {
 
   return (
     <section className="relative min-h-[100svh] pt-24 pb-12 flex items-center overflow-hidden">
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        poster="/salon-2.jpg"
+        className="absolute inset-0 h-full w-full object-cover"
+      >
+        <source src="/salon-hero.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-bg/75" />
       <div
-        className="absolute inset-0 opacity-30"
+        className="absolute inset-0"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 20% 30%, hsl(var(--accent) / 0.18), transparent 50%), radial-gradient(circle at 80% 70%, hsl(var(--accent) / 0.08), transparent 60%)",
+            "linear-gradient(to top, hsl(var(--bg)) 0%, hsl(var(--bg) / 0.4) 40%, hsl(var(--bg) / 0.6) 100%), radial-gradient(circle at 20% 30%, hsl(var(--accent) / 0.15), transparent 60%)",
         }}
       />
       <div
         className="absolute inset-x-0 bottom-0 h-px"
         style={{
           background:
-            "linear-gradient(to right, transparent, hsl(var(--accent) / 0.4), transparent)",
+            "linear-gradient(to right, transparent, hsl(var(--accent) / 0.5), transparent)",
         }}
       />
 

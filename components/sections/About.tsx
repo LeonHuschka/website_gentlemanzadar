@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { SectionHeader } from "./SectionHeader";
-import { PlaceholderImage } from "@/components/brand/PlaceholderImage";
 
 export function About() {
   const t = useTranslations("about");
@@ -26,11 +26,15 @@ export function About() {
         </div>
 
         <div className="lg:col-span-5 order-1 lg:order-2 relative">
-          <PlaceholderImage
-            label="Salon photo"
-            aspect="aspect-[4/5]"
-            className="relative"
-          />
+          <div className="relative aspect-[4/5] overflow-hidden border border-line/40">
+            <Image
+              src="/salon-1.jpg"
+              alt="Inside Gentleman Zadar barbershop"
+              fill
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              className="object-cover"
+            />
+          </div>
           <div className="absolute -bottom-4 -right-4 h-24 w-24 border border-accent/40 -z-0" />
         </div>
       </div>

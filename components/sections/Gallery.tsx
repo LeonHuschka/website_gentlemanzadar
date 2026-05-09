@@ -1,15 +1,20 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { SectionHeader } from "./SectionHeader";
 import { PlaceholderImage } from "@/components/brand/PlaceholderImage";
 
-const tiles = [
-  { aspect: "aspect-[4/5]", span: "row-span-2" },
-  { aspect: "aspect-[4/3]", span: "" },
-  { aspect: "aspect-square", span: "" },
-  { aspect: "aspect-[3/4]", span: "" },
-  { aspect: "aspect-[4/3]", span: "" },
-  { aspect: "aspect-square", span: "row-span-2" },
-  { aspect: "aspect-[4/3]", span: "" },
+type Tile =
+  | { kind: "photo"; src: string; alt: string; span?: string }
+  | { kind: "placeholder"; span?: string; label?: string };
+
+const tiles: Tile[] = [
+  { kind: "photo", src: "/salon-2.jpg", alt: "Two barbers at work", span: "row-span-2" },
+  { kind: "placeholder" },
+  { kind: "photo", src: "/salon-1.jpg", alt: "Barber working" },
+  { kind: "placeholder" },
+  { kind: "placeholder" },
+  { kind: "placeholder", span: "row-span-2" },
+  { kind: "placeholder" },
 ];
 
 export function Gallery() {
@@ -32,12 +37,24 @@ export function Gallery() {
         />
         <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 auto-rows-[160px] sm:auto-rows-[180px]">
           {tiles.map((tile, i) => (
-            <div key={i} className={`${tile.span}`}>
-              <PlaceholderImage
-                aspect="h-full w-full"
-                className="!aspect-auto h-full w-full"
-                label={`#${i + 1}`}
-              />
+            <div key={i} className={tile.span ?? ""}>
+              {tile.kind === "photo" ? (
+                <div className="relative h-full w-full overflow-hidden border border-line/40 group">
+                  <Image
+                    src={tile.src}
+                    alt={tile.alt}
+                    fill
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+              ) : (
+                <PlaceholderImage
+                  aspect="h-full w-full"
+                  className="!aspect-auto h-full w-full"
+                  label={`#${i + 1}`}
+                />
+              )}
             </div>
           ))}
         </div>
