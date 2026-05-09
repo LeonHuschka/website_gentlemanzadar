@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
@@ -8,14 +9,38 @@ import { Link } from "@/i18n/routing";
 
 export function Hero() {
   const t = useTranslations("hero");
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    v.muted = true;
+    v.defaultMuted = true;
+    v.setAttribute("muted", "");
+    v.setAttribute("playsinline", "");
+    const tryPlay = () => v.play().catch(() => {});
+    tryPlay();
+    const onCanPlay = () => tryPlay();
+    v.addEventListener("canplay", onCanPlay);
+    const onVisible = () => {
+      if (document.visibilityState === "visible") tryPlay();
+    };
+    document.addEventListener("visibilitychange", onVisible);
+    return () => {
+      v.removeEventListener("canplay", onCanPlay);
+      document.removeEventListener("visibilitychange", onVisible);
+    };
+  }, []);
 
   return (
     <section className="relative min-h-[100svh] pt-24 pb-12 flex items-center overflow-hidden">
       <video
+        ref={videoRef}
         autoPlay
         muted
         loop
         playsInline
+        controls={false}
         preload="auto"
         poster="/salon-2.jpg"
         className="absolute inset-0 h-full w-full object-cover"

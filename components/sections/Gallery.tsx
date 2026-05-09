@@ -9,11 +9,11 @@ type Tile =
 
 const tiles: Tile[] = [
   { kind: "photo", src: "/salon-2.jpg", alt: "Two barbers at work", span: "row-span-2" },
-  { kind: "placeholder" },
+  { kind: "photo", src: "/salon-4.jpg", alt: "Fresh fade haircut" },
   { kind: "photo", src: "/salon-1.jpg", alt: "Barber working" },
+  { kind: "photo", src: "/salon-5.jpg", alt: "Hot towel beard shave" },
+  { kind: "photo", src: "/salon-3.jpg", alt: "Inside the salon", span: "row-span-2" },
   { kind: "placeholder" },
-  { kind: "placeholder" },
-  { kind: "placeholder", span: "row-span-2" },
   { kind: "placeholder" },
 ];
 
