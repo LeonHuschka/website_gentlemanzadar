@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "Gentleman Zadar — Barbershop",
+    "description": "Classic men's barbershop in the heart of Zadar. Cuts, shaves and beard grooming."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "team": "Team",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "book": "Book appointment"
+  },
+  "hero": {
+    "kicker": "Zadar · Since 2018",
+    "title": "Classic cuts. Real men's code.",
+    "subtitle": "Razors, scissors and a cold beer. You don't just come here for a haircut — you come here for the attitude.",
+    "ctaPrimary": "Book appointment",
+    "ctaSecondary": "See services"
+  },
+  "about": {
+    "kicker": "Our story",
+    "title": "A salon. Not a hairdresser.",
+    "body1": "Gentleman started from one idea: that a man in Zadar should have a place where he feels at home. Old school, loud music, coffee or beer while you wait.",
+    "body2": "Our barbers work the old way — straight razor, scissors and patience. No shortcuts. Every cut is built for you, not for the crowd."
+  },
+  "services": {
+    "kicker": "Price list",
+    "title": "Services",
+    "subtitle": "All prices in euros. Cash or card.",
+    "minutes": "min",
+    "items": {
+      "haircut": { "name": "Men's haircut", "desc": "Classic scissor and clipper cut, wash and styling.", "price": "18", "duration": "40" },
+      "beard": { "name": "Beard shave", "desc": "Hot towel, straight razor, finishing balm.", "price": "15", "duration": "30" },
+      "combo": { "name": "Cut + beard", "desc": "The full treatment for a proper gentleman.", "price": "28", "duration": "60" },
+      "kids": { "name": "Kids' cut", "desc": "For little rebels up to 12.", "price": "12", "duration": "30" },
+      "hotTowel": { "name": "Hot towel shave", "desc": "The seven-step classic straight razor shave.", "price": "20", "duration": "45" },
+      "buzz": { "name": "Buzz cut (one length)", "desc": "Quick, clean, no compromise.", "price": "10", "duration": "20" }
+    }
+  },
+  "team": {
+    "kicker": "Team",
+    "title": "The guys behind the blade",
+    "subtitle": "Five years experience minimum. Zero compromise."
+  },
+  "gallery": {
+    "kicker": "Gallery",
+    "title": "From the shop",
+    "subtitle": "Atmosphere, work, guests."
+  },
+  "location": {
+    "kicker": "Location",
+    "title": "Where we are",
+    "address": "Put Mirvice 85, Zadar",
+    "hoursTitle": "Opening hours",
+    "phoneLabel": "Phone",
+    "days": {
+      "monFri": "Monday – Friday",
+      "sat": "Saturday",
+      "sun": "Sunday"
+    },
+    "hoursWeek": "08:00 – 20:00",
+    "hoursSat": "08:00 – 18:00",
+    "hoursSun": "Closed",
+    "directions": "Open in Google Maps"
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Get in touch",
+    "subtitle": "Fastest by WhatsApp or phone. Or just walk in.",
+    "callUs": "Call",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram"
+  },
+  "footer": {
+    "tagline": "A classic men's barbershop in Zadar.",
+    "rights": "All rights reserved.",
+    "language": "Language"
+  },
+  "booking": {
+    "title": "Book appointment",
+    "subtitle": "Four clicks. No signup.",
+    "steps": {
+      "barber": "Barber",
+      "service": "Service",
+      "datetime": "Date & time",
+      "details": "Details",
+      "confirm": "Confirm"
+    },
+    "back": "Back",
+    "next": "Next",
+    "selectBarberTitle": "Pick your barber",
+    "selectBarberSubtitle": "Each one has his own style — pick whoever fits you.",
+    "anyBarber": "Any barber",
+    "anyBarberDesc": "Whoever frees up first.",
+    "selectServiceTitle": "What are we doing today?",
+    "selectServiceSubtitle": "You can add more in the shop.",
+    "selectDateTitle": "When works for you?",
+    "selectDateSubtitle": "Greyed-out slots are taken.",
+    "noSlots": "Pick a date first.",
+    "detailsTitle": "Your details",
+    "detailsSubtitle": "We need to call you if anything changes.",
+    "name": "Full name",
+    "namePlaceholder": "John Smith",
+    "phone": "Phone",
+    "phonePlaceholder": "+385 ...",
+    "note": "Note (optional)",
+    "notePlaceholder": "Anything we should know before the appointment.",
+    "validation": {
+      "nameRequired": "Enter your name",
+      "phoneRequired": "Enter your phone number",
+      "phoneInvalid": "Check the number"
+    },
+    "confirmTitle": "All correct?",
+    "confirmSubtitle": "Check before sending.",
+    "summary": {
+      "barber": "Barber",
+      "service": "Service",
+      "date": "Date",
+      "time": "Time",
+      "duration": "Duration",
+      "price": "Price",
+      "name": "Name",
+      "phone": "Phone",
+      "note": "Note"
+    },
+    "submit": "Confirm booking",
+    "submitting": "Sending...",
+    "successTitle": "See you!",
+    "successSubtitle": "Booking received. We'll send an SMS confirmation.",
+    "successCode": "Booking number",
+    "successAddCalendar": "Add to calendar",
+    "successHome": "Back home",
+    "demoNote": "Demo only — bookings don't reach the system yet."
+  },
+  "barbers": {
+    "marko": { "name": "Marko", "role": "Owner · Master barber", "bio": "15+ years behind the blade. Classic and fade." },
+    "luka": { "name": "Luka", "role": "Senior barber", "bio": "Beard and hot towel shave specialist." },
+    "ante": { "name": "Ante", "role": "Barber", "bio": "Quick cuts and modern styling." },
+    "duje": { "name": "Duje", "role": "Junior barber", "bio": "Young blood. Old approach." }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "Gentleman Zadar — Barbershop",
+    "description": "Klasični muški frizerski salon u srcu Zadra. Šišanje, brijanje i njega brade."
+  },
+  "nav": {
+    "home": "Početna",
+    "about": "O nama",
+    "services": "Usluge",
+    "team": "Tim",
+    "gallery": "Galerija",
+    "contact": "Kontakt",
+    "book": "Rezerviraj termin"
+  },
+  "hero": {
+    "kicker": "Zadar · Od 2018.",
+    "title": "Klasično šišanje. Pravi muški kod.",
+    "subtitle": "Britve, makaze i hladno pivo. Ovdje se ne ide samo na šišanje — ovdje se ide po stav.",
+    "ctaPrimary": "Rezerviraj termin",
+    "ctaSecondary": "Pogledaj usluge"
+  },
+  "about": {
+    "kicker": "Naša priča",
+    "title": "Salon. Ne frizerski salon.",
+    "body1": "Gentleman je nastao iz jedne ideje: da muškarac u Zadru ima mjesto gdje se osjeća kao kod kuće. Stara škola, glasna glazba, kava ili pivo dok čekaš na red.",
+    "body2": "Naši barberi rade po starom — britvom, makazama i strpljenjem. Bez prečaca. Svako šišanje je sklopljeno za tebe, a ne za masu."
+  },
+  "services": {
+    "kicker": "Cjenik",
+    "title": "Usluge",
+    "subtitle": "Sve cijene u eurima. Plaćanje gotovinom ili karticom.",
+    "minutes": "min",
+    "items": {
+      "haircut": { "name": "Muško šišanje", "desc": "Klasično šišanje makazama i strojićem, pranje i styling.", "price": "18", "duration": "40" },
+      "beard": { "name": "Brijanje brade", "desc": "Toplim ručnikom, britvom, sa završnim balzamom.", "price": "15", "duration": "30" },
+      "combo": { "name": "Šišanje + brada", "desc": "Kompletan tretman za pravog gospodina.", "price": "28", "duration": "60" },
+      "kids": { "name": "Dječje šišanje", "desc": "Za male buntovnike do 12 godina.", "price": "12", "duration": "30" },
+      "hotTowel": { "name": "Hot Towel Shave", "desc": "Klasično brijanje britvom u sedam koraka.", "price": "20", "duration": "45" },
+      "buzz": { "name": "Strojić (jedna duljina)", "desc": "Brzo, čisto, bez kompromisa.", "price": "10", "duration": "20" }
+    }
+  },
+  "team": {
+    "kicker": "Tim",
+    "title": "Tipovi iza britve",
+    "subtitle": "Pet godina iskustva minimalno. Nula kompromisa."
+  },
+  "gallery": {
+    "kicker": "Galerija",
+    "title": "Iz salona",
+    "subtitle": "Atmosfera, radovi, gosti."
+  },
+  "location": {
+    "kicker": "Lokacija",
+    "title": "Gdje smo",
+    "address": "Put Mirvice 85, Zadar",
+    "hoursTitle": "Radno vrijeme",
+    "phoneLabel": "Telefon",
+    "days": {
+      "monFri": "Ponedjeljak – Petak",
+      "sat": "Subota",
+      "sun": "Nedjelja"
+    },
+    "hoursWeek": "08:00 – 20:00",
+    "hoursSat": "08:00 – 18:00",
+    "hoursSun": "Zatvoreno",
+    "directions": "Otvori u Google Maps"
+  },
+  "contact": {
+    "kicker": "Kontakt",
+    "title": "Javi se",
+    "subtitle": "Najbrže preko WhatsApp-a ili telefona. Inače dođi i sjedni.",
+    "callUs": "Nazovi",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram"
+  },
+  "footer": {
+    "tagline": "Klasični muški barbershop u Zadru.",
+    "rights": "Sva prava pridržana.",
+    "language": "Jezik"
+  },
+  "booking": {
+    "title": "Rezerviraj termin",
+    "subtitle": "Četiri klika. Bez registracije.",
+    "steps": {
+      "barber": "Barber",
+      "service": "Usluga",
+      "datetime": "Datum & vrijeme",
+      "details": "Podaci",
+      "confirm": "Potvrda"
+    },
+    "back": "Natrag",
+    "next": "Dalje",
+    "selectBarberTitle": "Odaberi svog barbera",
+    "selectBarberSubtitle": "Svaki radi po svome — odaberi tko ti najviše odgovara.",
+    "anyBarber": "Bilo koji",
+    "anyBarberDesc": "Sjedni s prvim koji se oslobodi.",
+    "selectServiceTitle": "Što danas radimo?",
+    "selectServiceSubtitle": "Možeš dodati još kasnije u salonu.",
+    "selectDateTitle": "Kada ti odgovara?",
+    "selectDateSubtitle": "Sivi termini su zauzeti.",
+    "noSlots": "Odaberi prvo datum.",
+    "detailsTitle": "Tvoji podaci",
+    "detailsSubtitle": "Trebamo te zvati ako se nešto promijeni.",
+    "name": "Ime i prezime",
+    "namePlaceholder": "Ivan Ivić",
+    "phone": "Telefon",
+    "phonePlaceholder": "+385 ...",
+    "note": "Napomena (opcionalno)",
+    "notePlaceholder": "Bilo što što bismo trebali znati prije termina.",
+    "validation": {
+      "nameRequired": "Unesi ime",
+      "phoneRequired": "Unesi broj telefona",
+      "phoneInvalid": "Provjeri broj"
+    },
+    "confirmTitle": "Sve točno?",
+    "confirmSubtitle": "Provjeri prije slanja.",
+    "summary": {
+      "barber": "Barber",
+      "service": "Usluga",
+      "date": "Datum",
+      "time": "Vrijeme",
+      "duration": "Trajanje",
+      "price": "Cijena",
+      "name": "Ime",
+      "phone": "Telefon",
+      "note": "Napomena"
+    },
+    "submit": "Potvrdi rezervaciju",
+    "submitting": "Šaljem...",
+    "successTitle": "Vidimo se!",
+    "successSubtitle": "Rezervacija je zaprimljena. Poslat ćemo ti SMS potvrdu.",
+    "successCode": "Broj rezervacije",
+    "successAddCalendar": "Dodaj u kalendar",
+    "successHome": "Na početnu",
+    "demoNote": "Demo prikaz — rezervacije još ne idu u sustav."
+  },
+  "barbers": {
+    "marko": { "name": "Marko", "role": "Vlasnik · Master barber", "bio": "15+ godina iza britve. Klasika i fade." },
+    "luka": { "name": "Luka", "role": "Senior barber", "bio": "Specijalist za bradu i hot towel shave." },
+    "ante": { "name": "Ante", "role": "Barber", "bio": "Brzi rezovi i moderni styling." },
+    "duje": { "name": "Duje", "role": "Junior barber", "bio": "Mlada krv. Stari pristup." }
+  }
+}

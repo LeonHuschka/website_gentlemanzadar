@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "Gentleman Zadar — Barbería",
+    "description": "Barbería clásica de caballeros en el corazón de Zadar. Cortes, afeitado y cuidado de barba."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "team": "Equipo",
+    "gallery": "Galería",
+    "contact": "Contacto",
+    "book": "Reservar cita"
+  },
+  "hero": {
+    "kicker": "Zadar · Desde 2018",
+    "title": "Cortes clásicos. Código de hombres.",
+    "subtitle": "Navajas, tijeras y una cerveza fría. Aquí no solo vienes a cortarte el pelo — vienes por la actitud.",
+    "ctaPrimary": "Reservar cita",
+    "ctaSecondary": "Ver servicios"
+  },
+  "about": {
+    "kicker": "Nuestra historia",
+    "title": "Un salón. No una peluquería.",
+    "body1": "Gentleman nació de una idea: que un hombre en Zadar tenga un sitio donde se sienta como en casa. A la antigua, música alta, café o cerveza mientras esperas.",
+    "body2": "Nuestros barberos trabajan a la antigua — navaja, tijeras y paciencia. Sin atajos. Cada corte está hecho para ti, no para la masa."
+  },
+  "services": {
+    "kicker": "Tarifas",
+    "title": "Servicios",
+    "subtitle": "Todos los precios en euros. Efectivo o tarjeta.",
+    "minutes": "min",
+    "items": {
+      "haircut": { "name": "Corte de caballero", "desc": "Corte clásico con tijera y máquina, lavado y peinado.", "price": "18", "duration": "40" },
+      "beard": { "name": "Afeitado de barba", "desc": "Toalla caliente, navaja, bálsamo final.", "price": "15", "duration": "30" },
+      "combo": { "name": "Corte + barba", "desc": "El tratamiento completo para un verdadero caballero.", "price": "28", "duration": "60" },
+      "kids": { "name": "Corte infantil", "desc": "Para pequeños rebeldes hasta los 12.", "price": "12", "duration": "30" },
+      "hotTowel": { "name": "Hot Towel Shave", "desc": "Afeitado clásico a navaja en siete pasos.", "price": "20", "duration": "45" },
+      "buzz": { "name": "Máquina (un solo largo)", "desc": "Rápido, limpio, sin compromisos.", "price": "10", "duration": "20" }
+    }
+  },
+  "team": {
+    "kicker": "Equipo",
+    "title": "Los tipos detrás de la navaja",
+    "subtitle": "Mínimo cinco años de experiencia. Cero compromisos."
+  },
+  "gallery": {
+    "kicker": "Galería",
+    "title": "Desde el salón",
+    "subtitle": "Ambiente, trabajos, clientes."
+  },
+  "location": {
+    "kicker": "Ubicación",
+    "title": "Dónde estamos",
+    "address": "Put Mirvice 85, Zadar",
+    "hoursTitle": "Horario",
+    "phoneLabel": "Teléfono",
+    "days": {
+      "monFri": "Lunes – Viernes",
+      "sat": "Sábado",
+      "sun": "Domingo"
+    },
+    "hoursWeek": "08:00 – 20:00",
+    "hoursSat": "08:00 – 18:00",
+    "hoursSun": "Cerrado",
+    "directions": "Abrir en Google Maps"
+  },
+  "contact": {
+    "kicker": "Contacto",
+    "title": "Escríbenos",
+    "subtitle": "Lo más rápido por WhatsApp o teléfono. O ven directamente.",
+    "callUs": "Llamar",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram"
+  },
+  "footer": {
+    "tagline": "Barbería clásica de caballeros en Zadar.",
+    "rights": "Todos los derechos reservados.",
+    "language": "Idioma"
+  },
+  "booking": {
+    "title": "Reservar cita",
+    "subtitle": "Cuatro clics. Sin registro.",
+    "steps": {
+      "barber": "Barbero",
+      "service": "Servicio",
+      "datetime": "Fecha y hora",
+      "details": "Datos",
+      "confirm": "Confirmar"
+    },
+    "back": "Atrás",
+    "next": "Siguiente",
+    "selectBarberTitle": "Elige a tu barbero",
+    "selectBarberSubtitle": "Cada uno tiene su estilo — elige el que mejor te encaje.",
+    "anyBarber": "Cualquiera",
+    "anyBarberDesc": "El primero que se quede libre.",
+    "selectServiceTitle": "¿Qué hacemos hoy?",
+    "selectServiceSubtitle": "En el salón puedes añadir más.",
+    "selectDateTitle": "¿Cuándo te viene bien?",
+    "selectDateSubtitle": "Las horas en gris están ocupadas.",
+    "noSlots": "Elige primero una fecha.",
+    "detailsTitle": "Tus datos",
+    "detailsSubtitle": "Necesitamos llamarte si algo cambia.",
+    "name": "Nombre y apellido",
+    "namePlaceholder": "Juan Pérez",
+    "phone": "Teléfono",
+    "phonePlaceholder": "+385 ...",
+    "note": "Nota (opcional)",
+    "notePlaceholder": "Algo que debamos saber antes de la cita.",
+    "validation": {
+      "nameRequired": "Introduce tu nombre",
+      "phoneRequired": "Introduce tu teléfono",
+      "phoneInvalid": "Revisa el número"
+    },
+    "confirmTitle": "¿Todo correcto?",
+    "confirmSubtitle": "Revisa antes de enviar.",
+    "summary": {
+      "barber": "Barbero",
+      "service": "Servicio",
+      "date": "Fecha",
+      "time": "Hora",
+      "duration": "Duración",
+      "price": "Precio",
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "note": "Nota"
+    },
+    "submit": "Confirmar reserva",
+    "submitting": "Enviando...",
+    "successTitle": "¡Nos vemos!",
+    "successSubtitle": "Reserva recibida. Te enviaremos un SMS de confirmación.",
+    "successCode": "Número de reserva",
+    "successAddCalendar": "Añadir al calendario",
+    "successHome": "Volver al inicio",
+    "demoNote": "Solo demo — las reservas aún no llegan al sistema."
+  },
+  "barbers": {
+    "marko": { "name": "Marko", "role": "Propietario · Master barber", "bio": "Más de 15 años con la navaja. Clásico y fade." },
+    "luka": { "name": "Luka", "role": "Barbero senior", "bio": "Especialista en barba y hot towel shave." },
+    "ante": { "name": "Ante", "role": "Barbero", "bio": "Cortes rápidos y peinado moderno." },
+    "duje": { "name": "Duje", "role": "Barbero junior", "bio": "Sangre joven. Enfoque clásico." }
+  }
+}

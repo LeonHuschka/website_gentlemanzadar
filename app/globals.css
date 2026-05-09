@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: 0 0% 4%;
+    --surface: 0 0% 8%;
+    --surface-2: 0 0% 12%;
+    --line: 40 8% 22%;
+    --accent: 40 50% 58%;
+    --accent-strong: 42 65% 70%;
+    --text: 38 25% 92%;
+    --muted: 38 8% 58%;
+    --danger: 8 55% 42%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-text font-sans antialiased;
+    background-image:
+      radial-gradient(ellipse at top, hsl(var(--surface)) 0%, transparent 60%),
+      radial-gradient(ellipse at bottom, hsl(var(--surface) / 0.6) 0%, transparent 70%);
+    background-attachment: fixed;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  ::selection {
+    background: hsl(var(--accent) / 0.4);
+    color: hsl(var(--text));
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display uppercase tracking-widest2;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .kicker {
+    @apply inline-flex items-center gap-2 text-xs uppercase tracking-widest2 text-accent;
+  }
+
+  .kicker::before {
+    content: "";
+    @apply inline-block h-px w-8 bg-accent;
+  }
+
+  .hairline-divider {
+    background-image: linear-gradient(to right, transparent, hsl(var(--accent) / 0.5), transparent);
+    height: 1px;
+  }
+
+  .barber-stripe {
+    background-image: repeating-linear-gradient(
+      45deg,
+      hsl(var(--accent)) 0,
+      hsl(var(--accent)) 8px,
+      hsl(var(--bg)) 8px,
+      hsl(var(--bg)) 16px,
+      hsl(var(--text)) 16px,
+      hsl(var(--text)) 24px,
+      hsl(var(--bg)) 24px,
+      hsl(var(--bg)) 32px
+    );
+    background-size: 40px 40px;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 font-display uppercase tracking-widest2 text-sm bg-accent text-bg hover:bg-accent-strong transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 font-display uppercase tracking-widest2 text-sm border border-line text-text hover:border-accent hover:text-accent transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 text-sm text-muted hover:text-text transition-colors;
+  }
+
+  .card {
+    @apply bg-surface border border-line/60 hover:border-accent/40 transition-colors;
+  }
+
+  .input {
+    @apply w-full bg-surface border border-line/60 px-4 py-3 text-text placeholder:text-muted focus:border-accent focus:outline-none transition-colors;
+  }
+
+  .label {
+    @apply block text-xs font-display uppercase tracking-widest2 text-muted mb-2;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* react-day-picker overrides */
+.rdp-root {
+  --rdp-accent-color: hsl(var(--accent));
+  --rdp-accent-background-color: hsl(var(--accent) / 0.15);
+  --rdp-day_button-border-radius: 0;
+  --rdp-day-height: 2.5rem;
+  --rdp-day-width: 2.5rem;
+  --rdp-cell-size: 2.5rem;
+  --rdp-font-family: var(--font-body);
+  color: hsl(var(--text));
+}
+.rdp-day_button {
+  border: 1px solid transparent;
+  font-family: var(--font-display);
+  letter-spacing: 0.1em;
+}
+.rdp-day_button:hover:not([disabled]) {
+  border-color: hsl(var(--accent));
+  background: hsl(var(--accent) / 0.1);
+}
+.rdp-selected .rdp-day_button {
+  background: hsl(var(--accent));
+  color: hsl(var(--bg));
+  font-weight: 700;
+}
+.rdp-disabled {
+  opacity: 0.25;
+}
+.rdp-month_caption {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: hsl(var(--accent));
+}
+.rdp-weekday {
+  color: hsl(var(--muted));
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.7rem;
+}
+.rdp-chevron {
+  fill: hsl(var(--accent));
+}
